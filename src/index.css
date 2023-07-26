@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333; /* Dark gray text color */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: #7a1865; /* Dark purple header background */
+  color: #fff; /* White header text color */
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle box-shadow */
+}
+
+.top {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center; /* Vertically align items */
+  margin-bottom: 2rem;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  color: #444;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Add subtle box-shadow */
+}
+
+.add {
+  background-color: #7a1865;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Add hover effect for the add button */
+.add:hover {
+  background-color: #590f48; /* Slightly darker purple on hover */
+  transform: translateY(-2px); /* Add a subtle lift effect on hover */
+}
+
+.todo {
+  position: relative;
+  background-color: #fff; /* White todo background */
+  color: #444;
+  padding: 1.5rem 3rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem; /* Increase margin */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add border transition effect on todo hover */
+.todo:hover {
+  border: 1px solid #7a1865;
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect for icons */
+.icon:hover {
+  color: #444;
+}
+
+/* Add a nice line separator between todos */
+.todo:not(:last-child) {
+  border-bottom: 1px solid #f1f1f1;
+}
